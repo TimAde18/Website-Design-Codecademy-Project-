@@ -1,0 +1,253 @@
+
+/*Adding in my custom colors*/
+:root {
+  --vaporwave-gray: #2C3552;
+  --vaporwave-blue: #060047;
+  --vaporwave-yellow: #F4FF61FF;
+  --vaporwave-orange: #FF9900FF;
+  --vaporwave-purple: #B3005E;
+  --vaporwave-purple-pink: #E90064;
+  --vaporwave-pink: #FF5F9E;
+  --Tilt-font: "Tilt Prism", cursive;
+  --Gajraj-font: "Gajraj One", cursive;
+  --Chakra-font: "Chakra Petch", sans-serif;
+  --Bebas-font: "Bebas Neue", cursive;
+}
+
+
+/*
+  1. Use a more-intuitive box-sizing model.
+*/
+*, *::before, *::after {
+    box-sizing: border-box;
+  }
+  /*
+    2. Remove default margin
+  */
+  * {
+    margin: 0;
+  }
+  /*
+    3. Allow percentage-based heights in the application
+  */
+  html, body {
+    height: 100%;
+  }
+  /*
+    Typographic tweaks!
+    4. Add accessible line-height
+    5. Improve text rendering
+  */
+  body {
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+  }
+  /*
+    6. Improve media defaults
+  */
+  img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+  }
+  /*
+    7. Remove built-in form typography styles
+  */
+  input, button, textarea, select {
+    font: inherit;
+  }
+  /*
+    8. Avoid text overflows
+  */
+  p, h1, h2, h3, h4, h5, h6 {
+    overflow-wrap: break-word;
+  }
+  /*
+    9. Create a root stacking context
+  */
+  #root, #__next {
+    isolation: isolate;
+  }
+
+  /* My Code*/
+
+
+  /* General Code */
+
+
+  body {
+    background-color: var(--vaporwave-gray);
+  }
+
+  main {
+    margin: 0 3rem;
+  }
+
+
+
+  /* Direct Changes */
+
+
+  .header-img {
+  background-image: url(./images/vaporwave-background.jfif);
+  height: 200px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+  h1 {
+    text-align: center;
+    position: relative;
+    top: 3rem;
+    font-family: var(--Gajraj-font);
+    font-size: 3rem;
+    color: var(--vaporwave-orange);
+  }
+
+  h2 {
+    text-align: center;
+    margin: 2.5rem;
+    color: var(--vaporwave-purple-pink);
+    font-family: var(--Chakra-font);
+    font-size: 3rem;
+  }
+
+  /* Color CSS */
+
+  .color {
+    border: 2px solid var(--vaporwave-yellow);
+    padding: 1.3rem;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap; 
+  }
+
+  .color__1, 
+  .color__2, 
+  .color__3, 
+  .color__4,
+  .color__5,
+  .color__6,
+  .color__7 {
+    border: 2px solid black;
+    font-family: var(--Bebas-font);
+    font-size: 1.4rem;
+    padding: 2rem;
+    margin: 1rem 1rem 1rem 0;
+  } 
+
+  .color__1 {
+    background-color: var(--vaporwave-yellow);
+    color: var(--vaporwave-gray);
+  }
+
+  .color__2 {
+    background-color: var(--vaporwave-orange);
+    color: var(--vaporwave-blue);
+  }
+
+  .color__3 {
+    background-color: var(--vaporwave-pink);
+    color: var(--vaporwave-purple);
+  }
+
+  .color__4 {
+    background-color: var(--vaporwave-purple-pink);
+    color: black;
+  }
+
+  .color__5 {
+    background-color: var(--vaporwave-purple);
+    color: var(--vaporwave-pink);
+  }
+
+  .color__6 {
+    background-color: var(--vaporwave-blue);
+    color: var(--vaporwave-orange);
+  }
+
+  .color__7 {
+  color: var(--vaporwave-yellow);
+  }
+
+  /* Font CSS */
+
+  .font {
+    border: 2px solid var(--vaporwave-orange);
+    padding: 1.3rem;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+  }
+
+  .font__1,
+  .font__2,
+  .font__3,
+  .font__4 {
+    border: 2px solid black;
+    padding: 1.5rem;
+    font-size: 2rem;
+    margin: 1rem 1rem 1rem 0;
+  }
+
+  .font__1 {
+    font-family: var(--Tilt-font);
+    color: var(--vaporwave-blue);
+    background-color: var(--vaporwave-orange);
+  }
+
+  .font__2 {
+    font-family: var(--Gajraj-font);
+    color: var(--vaporwave-orange);
+    background-color: var(--vaporwave-blue);
+  }
+
+  .font__3 {
+    font-family: var(--Chakra-font);
+    color: var(--vaporwave-pink);
+    background-color: var(--vaporwave-purple);
+  }
+
+  .font__4 {
+    font-family: var(--Bebas-font);
+    color: var(--vaporwave-purple);
+    background-color: var(--vaporwave-pink);
+  }
+
+  /* Text Styles */
+
+  .text-style {
+    border: 2px solid var(--vaporwave-pink);
+    padding: 1.3rem;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin-bottom: 50px;
+  }
+
+  .text-style__1,
+  .text-style__2,
+  .text-style__3,
+  .text-style__4 {
+    border: 2px solid black;
+    padding: 1.5rem;
+    font-size: 2rem;
+    margin: 1rem 1rem 1rem 0;
+    font-family: var(--Gajraj-font);
+  }
+
+  .text-style__1,
+  .text-style__2 {
+    color: var(--vaporwave-gray);
+    background-color: var(--vaporwave-yellow);
+  }
+
+  .text-style__3 {
+    color: var(--vaporwave-blue);
+    background-color: var(--vaporwave-orange);
+  }
+
+  .text-style__4 {
+    color: var(--vaporwave-pink);
+    background-color: var(--vaporwave-purple);
+  }
